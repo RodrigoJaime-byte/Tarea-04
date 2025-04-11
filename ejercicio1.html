@@ -10,9 +10,11 @@
 </body>
 <script>
     function sumar(a,b) {
-        return a+b;
+        if (typeof a !== 'number' && typeof b !== 'number') {
+            return "error: ambos valores deben ser numeros";
     }
-
-    console.log(sumar(5,3));
+    return a+b;
+}
+    console.log(sumar(2,3)) 
 </script>
 </html>
