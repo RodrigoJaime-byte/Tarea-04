@@ -9,16 +9,14 @@
     
 </body>
 <script>
-    function esPar(numero) {
-        if (numero % 2 === 0) {
-            return true; 
-        } 
-        else {
-            return false; 
-        }
+    
+    
+function esPar(numero) {
+    if (typeof numero !== 'number') {
+        return "Error: Debe ingresar un número";
     }
-    console.log(esPar(5));
-    console.log(esPar(8));
-    console.log(esPar(13));
+    return numero % 2 === 0;
+}
+console.log(esPar(4));
 </script>
 </html>
